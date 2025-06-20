@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<title>A Guide to Softball</title>
+</head>
+
+<body>
+	<!--Top nav bar design-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: georgia, garamond;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #918d33;
+            padding: 15px 20px;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            color: #f4a261;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #757236;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+            }
+            .navbar .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+
+	<!--Nav bar list-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #9b7653;
+            padding: 17px 17px;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            color: #9b7653;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #9b7653;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 10px 10px
+            }
+            .navbar .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            <!--define window location-->
+            <script>
+                document.querySelectorAll("a").forEach(link => {
+                    if (link.href === window.location.href) {
+                    link.classList.add("active");
+                }
+            });
+            </script>
+            <!--show window location-->
+            .active {
+                color: #5c4631;
+                font-weight: bold; 
+                text-decoration: underline;
+            }
+    </style>
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        <ul class="nav-links">
+            <li style="color: #fcd3ac;"><u>Home</u></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Videos</a></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+    </nav>
+    
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+    <!--Open nav bar menu-->
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+	
+
+	<!--title-->
+	<h1>A Guide to Softball</h1>
+	<img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4OTY5NjMxLWltYWdlLWt3dnVxN3dhLmpwZw.jpg" alt="uneven image" width="500" height="350">
+
+
+	<!--softball basics-->
+	<h2>Basics of Softball</h2>
+			<p>
+				Softball is one of the variations of baseball, split into two catagories, fastpitch and slowpitch. 
+				The objective of the game is to score as more runs than your opponent by hitting a ball and advancing around the four bases without getting out.
+				The game starts with the home team fielding. They are trying to get three outs before the batting team, or visitors, score runs. 
+				The top of the inning is when the home team is fielding. Once the home team gets three outs, the top of the inning is over, and it is the visitors turn to field, which is called the bottom of the inning.
+				Depending on time, there is usually 5 to 7 innings in a game, one inning over when the home or visitor team has both feilded and batted.
+			</p>
+		<!--fastpitch-->
+		<h3>Fastpitch Softball</h3>
+			<p>
+				Fastpitch is the more popular than slowpitch in competitive leagues. Here are the basic rules in fastpitch:
+			</p>
+			
+				<h4>1. There are 9 players fielding at all times</h4>
+					<p>
+						These positions are, Pitcher, Catcher, First Basemen, Second Basemen, Third Basemen, Shortstop, Right Fielder, Left Fielder, and Center Fielder.
+						They are on the defensive and working together to get three outs.
+					</p>
+					
+					
+				<h4>2. You need 3 outs to get out of the inning</h4>
+					<p>To get outs, you can:</p>
+					<ul>
+						<li>Touch a base with the ball that the runner is forced to run to (Ground out)</li>
+						<li>Tag a runner not on the base with the ball (Field out)</li>
+						<li>Catch a hit ball before it hits the ground (Fly out)</li>
+						<li>When three strikes are thrown and the batter does not hit them (Strikeout)</li>
+					</ul>
+					
+					
+				<h4>3. The pitcher has to pitch the ball into the strike zone</h4>
+					<p>
+						The pitcher does a windmill motion and tries to get three strikes on the batter to get them out.
+						The strike zone is between the knees and right under the sternum. 
+						If the pitcher misses the strike zone, the pitch is called a ball, and if they throw four balls for one batter, the batter gets to go to first base.
+					</p>
+					
+					
+				<h4>4. Stealing bases</h4>
+					<p>
+						Players on base can run, or 'steal' the next base without the ball being hit.
+						They leadoff from the base when the ball is released from the pitcher's hand (they can not leave earlier otherwise they would be out)
+						They can then run to the next base in front of them, and the fielding team can try and tag the runner out.
+					</p>
+				
+				
+				<h4>5. Base runninng</h4>
+					<p>
+						When the batter hits the ball, they run to first base, which along with home plate, are the only bases that you can over run.
+						If you are off the base at second or third, you can get tagged out.
+						To score a run, you have to safely touch all of the bases and then touch home plate.
+					</p>
+				
+				
+				<h4>6. Big hits</h4>
+					<ul>
+						<li>Single -> when the batter gets to <strong>first base</strong>on their hit </li>
+						<li>Double -> when the batter gets to <strong>second base</strong>on their hit </li>
+						<li>Triple -> when the batter gets to <strong>third base</strong>on their hit </li>
+						<li>Home Run -> when the batter gets all the was to <strong>home plate</strong>on their hit </sli>
+						<li>Home Run -> when the batter gets all the was to <strong>home plate</strong>on their hit </sli>
+					</ul>
+				
+				
+				
+				
+</body>
+</html>	
